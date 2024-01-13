@@ -138,9 +138,10 @@
                     <div class="contact__form">
                         <h3>Formulir</h3>
                         <form action="send_email.php" method="post">
-                            <input type="text" placeholder="Nama" name="name">
-                            <input type="text" placeholder="Email" name="email">
-                            <textarea placeholder="Detail Masalah" name="detail_masalah"></textarea>
+                            <input type="text" placeholder="Nama" name="name" required pattern="[a-zA-Z\s]+">
+                            <input type="email" placeholder="Email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-7]+.[a-zA-Z]">
+                            <input type="text" placeholder="No Whatsapp" name="no_hp" required pattern="[0-9]{10,15}">
+                            <textarea placeholder="Detail Masalah" name="detail_masalah" required></textarea>
                             <button type="submit" class="site-btn">Kirim</button>
                         </form>
                     </div>
@@ -150,27 +151,6 @@
     </section>
     <!-- Call To Action Section End -->
 
-    <!-- Modal Bootstrap -->
-    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="emailModalLabel">Buka Email</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Klik link di bawah ini untuk membuka email:</p>
-                    <a id="emailModalLink" href="" target="_blank">Buka Email</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer Section Begin -->
     <footer class="footer">

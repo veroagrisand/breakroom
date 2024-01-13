@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ambil nilai dari formulir
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $phone = $_POST["no_hp"];
     $message = $_POST["detail_masalah"];
 
     // Konfigurasi Mailtrap
@@ -38,11 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom($email, $name);
         $mail->addAddress($to);
         $mail->Subject = $subject;
-        $mail->Body    = "Name: " . $name . "\nEmail: " . $email . "\nMessage: " . $message;
+        $mail->Body    = "Nama: " . $name . "\nEmail: " . $email . "\nNo Hp: " . $phone . "\nDetail Masalah: " . $message;
 
         // Kirim email
         $mail->send();
-        echo "Email berhasil dikirim";
+
+        echo "<script>alert('Email berhasil dikirim');</script>";
+        header("Location: contact.html");
+        exit;
     } catch (Exception $e) {
         echo "Gagal mengirim email. Pesan kesalahan: {$mail->ErrorInfo}";
     }
