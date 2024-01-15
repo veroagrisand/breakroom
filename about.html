@@ -24,6 +24,21 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .card {
+            margin-bottom: 20px; /* Jarak antar card */
+        }
+    
+        .card-img-top {
+            object-fit: cover;
+            height: 300px; /* Sesuaikan tinggi card sesuai kebutuhan Anda */
+        }
+    
+        .card-body {
+            text-align: center; /* Pusatkan teks di dalam card body */
+        }
+    </style>
 </head>
 
 <body>
@@ -130,79 +145,42 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="services.html" class="primary-btn">Layanan</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="contact.html" class="primary-btn">Hubungi kami disini</a>
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-3">
+                    
+                </div>
+                
+            </div>
+                
+            
         </div>
     </section>
     <!-- About Section End -->
 
 
-    <!-- Counter Section Begin -->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">1068</h2>
-                                <p>Happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Perspective clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
     <!-- Team Section Begin -->
-    <section class="about spad">
-        <div class="container mt-5">
+    <section id="team" class="team spad set-bg" data-setbg="img/team-bg.jpg">
+        <div class="container mt-auto">
+            <div class="section-title">
+                <h2>Pengembang</h2>
+            
             <div class="row justify-content-center">
-        
                 <!-- Developer 1 -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card">
-                        <img src="developer1.jpg" class="card-img-top" alt="Developer 1">
-                        <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
-                            <p class="card-text">Web Developer</p>
+                        <img src="img/team/ucup.jpg" class="card-img-top" alt="Developer 1">
+                        <div class="card-body bg-info">
+                            <h5 style="color: white;" class="card-title">Azwar Yusuf</h5>
+                            <p style="color: black;" class="card-text">Backed Developer</p>
                         </div>
                     </div>
                 </div>
@@ -210,10 +188,10 @@
                 <!-- Developer 2 -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card">
-                        <img src="developer2.jpg" class="card-img-top" alt="Developer 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Jane Smith</h5>
-                            <p class="card-text">Mobile App Developer</p>
+                        <img src="img/team/alfon.jpg" class="card-img-top " alt="Developer 2">
+                        <div class="card-body bg-info">
+                            <h5 style="color: white;" class="card-title">Alfonsus Putera Waruwu</h5>
+                            <p style="color: black;" class="card-text">Project Manager</p>
                         </div>
                     </div>
                 </div>
@@ -221,42 +199,55 @@
                 <!-- Developer 3 -->
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="card">
-                        <img src="developer3.jpg" class="card-img-top" alt="Developer 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Mike Johnson</h5>
-                            <p class="card-text">UI/UX Designer</p>
+                        <img src="img/team/ramvi.jpg" class="card-img-top" alt="Developer 3">
+                        <div class="card-body bg-info">
+                            <h5 style="color: white;" class="card-title">Muhammad Ramvi Saputra</h5>
+                            <p style="color: black;"class="card-text">Website Analyst</p>
                         </div>
                     </div>
                 </div>
         
                 <!-- Developer 4 -->
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="card">
-                        <img src="developer4.jpg" class="card-img-top" alt="Developer 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Emily Brown</h5>
-                            <p class="card-text">Backend Developer</p>
+                        <img src="img/team/rayhan1.jpg" class="card-img-top img-fluid" alt="Developer 4">
+                        <div class="card-body bg-info rounded-1">
+                            <h5 style="color: white;" class="card-title">Rayhan Aditya Oemarin</h5>
+                            <p style="color: black;" class="card-text">Frontend Developer</p>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Developer 5 -->
-                <div class=" col-lg-3 col-md-6 col-sm-6 ">
+                <div class=" col-lg-3 col-md-6 col-sm-6 mt-2 ">
                     <div class="card">
-                        <img src="img/containerbg.png" class="card-img-top" alt="Developer 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Alex Wilson</h5>
-                            <p class="card-text">Frontend Developer</p>
+                        <img src="img/team/vero1.jpg" class="card-img-top" alt="Developer 5">
+                        <div class="card-body bg-info">
+                            <h5 style="color: white;" class="card-title">Vero Agrisanda</h5>
+                            <p style="color: black;" class="card-text">Backend Developer</p>
                         </div>
                     </div>
-                </div>
-                
-        
-            </div>
+                </div> 
+                </div>  
+                </div>  
         </div>
     </section>
+    <!-- Team Section End -->
+    <div class="logo spad">
+        <div class="container">
+            <div class="section-title">
+                <h2>didukung oleh</h2>
+            </div>
+            <div class="logo__carousel owl-carousel">
+                <a href="#" class="logo__item"><img src="img/logo/16314081669111.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="img/logo/logo_kemkes_jadi.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="img/logo/HMTI-ITPP.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="img/logo/favicon.png" alt=""></a>
+                <a href="#" class="logo__item"><img src="img/logo/logo-who1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
             <div class="footer__top">
@@ -281,39 +272,26 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                            <h5>Tentang Kami</h5>
+                            <p>Terbentuk pada tahun 2023 oleh 5 Sekawan, Break Room adalah Bisnis yang bergerak dalam bidang jasa yang mengkhususkan diri dalam kesehatan mental.</p>
+                            <a href="about.html" class="read__more">Baca lebih lanjut <span class="arrow_right"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
-                            <h5>Who we are</h5>
+                            <h5>Siapa Kami</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
+                                <li><a href="#team">Tim</a></li>
+                                <li><a href="contact.html">Hubungi Kami</a></li>
+                                <li><a href="https://maps.app.goo.gl/xvqTpEnRcknmvTSA6" target="_blank">Lokasi</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
+                            <h5>Berlangganan Newsletter</h5>
+                            <p>Break Room adalah perusahaan yang bergerak dalam bidang jasa pemenang penghargaan, penuh layanan yang mengkhususkan diri dalam kesehatan mental.</p>
+                            <form action="mailto:agrisandavero@gmail.com">
                                 <input type="text" placeholder="Email">
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
@@ -325,12 +303,11 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
+                        <p class="footer__copyright__text">Hak Cipta &copy;
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            Seluruh hak dilindungi | Website ini dibuat oleh <a href="#" target="_blank">BreakRoomTEAM</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -338,7 +315,7 @@
             </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
